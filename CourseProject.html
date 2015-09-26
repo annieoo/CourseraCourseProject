@@ -75,8 +75,8 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 <pre class="r"><code>library(caret)
 library(ggplot2)</code></pre>
 <p>Download the data files into your working directory.</p>
-<pre class="r"><code>#download.file(&quot;https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv&quot;, destfile = &quot;pml-training.csv&quot;, method=&quot;curl&quot;)
-#download.file(&quot;https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv&quot;, destfile = &quot;pml-testing.csv&quot;, method=&quot;curl&quot;)</code></pre>
+<pre class="r"><code>download.file(&quot;https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv&quot;, destfile = &quot;pml-training.csv&quot;, method=&quot;curl&quot;)
+download.file(&quot;https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv&quot;, destfile = &quot;pml-testing.csv&quot;, method=&quot;curl&quot;)</code></pre>
 <p>Load the data files.</p>
 <pre class="r"><code>trainData &lt;- read.csv(&quot;pml-training.csv&quot;)
 testData &lt;- read.csv(&quot;pml-testing.csv&quot;)</code></pre>
@@ -248,8 +248,8 @@ error </code></pre>
 predT</code></pre>
 <pre><code>##  [1] B A B A A E D B A A B C B A E E A B B B
 ## Levels: A B C D E</code></pre>
-<div id="generate-submission-to-coursera" class="section level4">
-<h4>Generate submission to Coursera</h4>
+<div id="generate-submission-files-to-coursera" class="section level4">
+<h4>Generate submission files to Coursera</h4>
 <pre class="r"><code>answers &lt;- predT
 
 pml_write_files = function(x){

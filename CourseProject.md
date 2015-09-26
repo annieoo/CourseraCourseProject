@@ -33,8 +33,8 @@ library(ggplot2)
 Download the data files into your working directory. 
 
 ```r
-#download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv", destfile = "pml-training.csv", method="curl")
-#download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv", destfile = "pml-testing.csv", method="curl")
+download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv", destfile = "pml-training.csv", method="curl")
+download.file("https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv", destfile = "pml-testing.csv", method="curl")
 ```
 Load the data files.
 
@@ -300,7 +300,7 @@ predT
 ## Levels: A B C D E
 ```
 
-#### Generate submission to Coursera 
+#### Generate submission files to Coursera 
 
 ```r
 answers <- predT
